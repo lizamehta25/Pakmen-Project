@@ -24,30 +24,31 @@
     }
 
     ul {
-    font-family: "sfpro"; 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-  }
+      font-family: "sfpro"; 
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Center horizontally */
+    }
 
-  li {
-    display: inline-block; /* Display list items inline */
-  }
+    li {
+      display: inline-block; /* Display list items inline */
+    }
 
-  li a {
-    display: block;
-    color: grey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+    li a {
+      display: block;
+      color: grey;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-  li a:hover {
-    background-color: lightpink;
-  }
+    li a:hover {
+      background-color: lightpink;
+    }
+
     .casestudyh1 {
       font-family: "tiempos";
       font-size: 50px; 
@@ -56,15 +57,15 @@
       left: 650px; 
     }
 
-.list-container {
-  position: relative;
-  top: 110px; /* Aligns the list container relative to the h1 */
-  left: 650px; /* Matches the h1's horizontal alignment */
-  display: grid;
-  grid-template-columns: 200px 300px; /* Set a fixed width for the columns */
-  row-gap: 10px; 
-  column-gap: 3px;
-}
+    .list-container {
+      position: relative;
+      top: 110px; /* Aligns the list container relative to the h1 */
+      left: 650px; /* Matches the h1's horizontal alignment */
+      display: grid;
+      grid-template-columns: 200px 300px; /* Set a fixed width for the columns */
+      row-gap: 10px; 
+      column-gap: 3px;
+    }
 
     .list-item {
       display: flex; /* Aligns the icon and text horizontally */
@@ -82,9 +83,10 @@
       color: grey;
       font-size: 20px;
     }
-    
+
     .text-column .text-item {
       margin-top: 20px; /* Adds slight top margin to align the second list */
+      color: black; 
     }
 
     /* Add styles for the image */
@@ -92,13 +94,34 @@
       width: auto;
       height: 700px;
       position: relative; /* Allows for top adjustment */
-      top: -250px; /* Moves the image 50px up */
-      left: -150px
+      top: -550px; /* Moves the image 50px up */
+      left: -150px;
+    }
+
+    /* New Styles for Overview Section */
+    .overview-container {
+      grid-column: 1 / span 2; /* Positions the overview in the second column of the grid */
+      margin-top: 10px; /* Adds space between the lists and the overview */
+    }
+
+    .overviewh3 {
+      font-family: "sfpro";
+      color: black;
+      font-size: 20px;
+    }
+
+    .overviewp {
+      font-family: "sfpro";
+      color: #333;
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 1.5;
+
     }
   </style>
 </head>
 <body>
-    <ul>
+  <ul>
     <li><a class="active" href="#home">HOME</a></li>
     <li><a href="#about">ABOUT</a></li>
     <li><a href="#play">PLAY</a></li>
@@ -130,6 +153,14 @@
     </div>
     <div class="text-column">
       <div class="text-item">Created engaging content</div>
+    </div>
+
+    <!-- Overview Section: This will appear on the right under the lists -->
+    <div class="overview-container">
+      <h3 class = "overviewh3">Overview</h3>
+      <p class = overviewp>
+        Pakmen Volleyball is a prominent organization that focuses on creating a dynamic and engaging community for volleyball enthusiasts. As the Social Media Coordinator, I contributed to managing event promotions, creating visually appealing content, and ensuring timely communication across various platforms. This role required a strong understanding of digital media tools and an ability to effectively engage with the target audience. The experience was incredibly fulfilling and helped me grow as a professional in the social media space.
+      </p>
     </div>
   </div>
 
