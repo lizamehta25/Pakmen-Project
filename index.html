@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
 <head>
-<!-- Created by Liza Mehta -->
-<meta charset="UTF-8">
-<title>Pakmen Project</title>
-<style>
-  @font-face { 
-    font-family: "tiempos"; 
-    src: url("Tiempos-Semi-Italic.otf") format("opentype"); 
-  }
-  
-  .tiempos {
-    font-family: "tiempos";
-  }
+  <!-- Created by Liza Mehta -->
+  <meta charset="UTF-8">
+  <title>Pakmen Project</title>
+  <style>
+    @font-face { 
+      font-family: "tiempos"; 
+      src: url("Tiempos-Semi-Italic.otf") format("opentype"); 
+    }
+    
+    .tiempos {
+      font-family: "tiempos";
+    }
 
-  @font-face { 
+    @font-face { 
+      font-family: "sfpro"; 
+      src: url("SF-Pro-Display-Light.otf") format("opentype");
+    }
+    
+    .sfpro { 
+      font-family: "sfpro";
+    }
+
+    ul {
     font-family: "sfpro"; 
-    src: url("SF-Pro-Display-Regular.otf") format("opentype");
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
   }
-  
-  .sfpro { 
-    font-family: "sfpro"; 
-  }
-  
-  .casestudyh1 { 
-    font-family: "tiempos";
-    position: relative; 
-    top: 100px; 
-    left: 650px; 
-  }
-  
-  .icons { 
-  display: inline-block; /* Makes the icon and text sit on the same line */
-  vertical-align: middle; /* Vertically align with the text */
-  }
-  
-  .casestudyh3 { 
-  font-family: "sfpro";
-  color: grey; 
-  font-size: 20px; 
-  display: inline-block; /* Makes the h3 and icon align horizontally */
-  vertical-align: middle; /* Vertically align with the icon */
-  
-  
-  
-  }
-  
-</style>
-  
-  <body>
-     
-<h1 class="casestudyh1">Pakmen Volleyball</h1>
-      
-    
-<img src="user.svg" alt="user icon" class="icons">
-    
-<h3 class="casestudyh3">
-   Role
-    </h3>
-    
 
-    
+  li {
+    display: inline-block; /* Display list items inline */
+  }
 
+  li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: lightpink;
+  }
+    .casestudyh1 {
+      font-family: "tiempos";
+      font-size: 50px; 
+      position: relative; 
+      top: 100px; 
+      left: 650px; 
+    }
+
+    .list-container {
+      position: relative;
+      top: 110px; /* Aligns the list container relative to the h1 */
+      left: 650px; /* Matches the h1's horizontal alignment */
+      display: grid;
+      grid-template-columns: auto auto; /* Two columns for two lists */
+    }
+
+    .list-item {
+      display: flex; /* Aligns the icon and text horizontally */
+      align-items: center; /* Vertically centers the items */
+      gap: 10px; /* Adds spacing between the icon and text */
+    }
+
+    .icons {
+      width: 20px; /* Adjust the icon size if needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    .casestudyh3, .text-item {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 20px;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </body>
+    .text-column .text-item {
+      margin-top: 20px; /* Adds slight top margin to align the second list */
+    }
+
+    /* Add styles for the image */
+    .header-image {
+      width: auto;
+      height: 700px;
+      position: relative; /* Allows for top adjustment */
+      top: -250px; /* Moves the image 50px up */
+      left: -150px
+    }
+  </style>
+</head>
+<body>
+    <ul>
+    <li><a class="active" href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#play">PLAY</a></li>
+  </ul>
   
-  
-  
-  
-  </head>
+  <h1 class="casestudyh1">Pakmen Volleyball</h1>
+
+  <div class="list-container">
+    <!-- First List Items -->
+    <div class="list-item">
+      <img src="user.svg" alt="user icon" class="icons">
+      <h3 class="casestudyh3">Role</h3>
+    </div>
+    <div class="text-column">
+      <div class="text-item">Social Media Coordinator</div>
+    </div>
+
+    <div class="list-item">
+      <img src="tool.svg" alt="tool icon" class="icons">
+      <h3 class="casestudyh3">Tools</h3>
+    </div>
+    <div class="text-column">
+      <div class="text-item">Managed event promotions</div>
+    </div>
+
+    <div class="list-item">
+      <img src="clock.svg" alt="clock icon" class="icons">
+      <h3 class="casestudyh3">Timeline</h3>
+    </div>
+    <div class="text-column">
+      <div class="text-item">Created engaging content</div>
+    </div>
+  </div>
+
+  <!-- Add class to the image -->
+  <img src="P_header.png" alt="description of image" class="header-image">
+</body>
 </html>
