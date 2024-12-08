@@ -56,13 +56,15 @@
       left: 650px; 
     }
 
-    .list-container {
-      position: relative;
-      top: 110px; /* Aligns the list container relative to the h1 */
-      left: 650px; /* Matches the h1's horizontal alignment */
-      display: grid;
-      grid-template-columns: auto auto; /* Two columns for two lists */
-    }
+.list-container {
+  position: relative;
+  top: 110px; /* Aligns the list container relative to the h1 */
+  left: 650px; /* Matches the h1's horizontal alignment */
+  display: grid;
+  grid-template-columns: 200px 300px; /* Set a fixed width for the columns */
+  row-gap: 10px; 
+  column-gap: 3px;
+}
 
     .list-item {
       display: flex; /* Aligns the icon and text horizontally */
