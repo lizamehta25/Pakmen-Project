@@ -98,7 +98,6 @@
       color: black; 
     }
 
-    /* Add styles for the image */
     .header-image {
       width: auto;
       height: 700px;
@@ -107,7 +106,6 @@
       left: -150px;
     }
 
-    /* New Styles for Overview Section */
     .overview-container {
       grid-column: 1 / span 2; /* Positions the overview in the second column of the grid */
       margin-top: 10px; /* Adds space between the lists and the overview */
@@ -128,126 +126,128 @@
     }
     
     .h3, .h4 {
-  position: relative; 
-  top: -500px; 
-  margin-right: 10; 
-  margin-left; 10; 
-  text-align: left; 
-  font-family: "sfpro-med";
-  color: black;
-  font-size: 20px;
-}
+      position: relative; 
+      top: -500px; 
+      margin-right: 10px; 
+      margin-left: 10px; 
+      text-align: left; 
+      font-family: "sfpro-med";
+      color: black;
+      font-size: 20px;
+    }
 
-.h4 {
-  font-family: "sfpro";
-  color: grey;
-  font-size: 18px;
-  margin-bottom: 15px; /* Add spacing below the h4 */
-}
+    .h4 {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 18px;
+      margin-bottom: 15px; /* Add spacing below the h4 */
+    }
 
-.p {
-  font-family: "sfpro";
-  color: black;
-  position: relative; 
-  top: -500px;
-  font-size: 16px;
-  line-height: 1.5; /* Improve readability */
-  margin-right: 10; 
-  margin-left; 10; 
-  text-align: left; /* Align the text */
-}
+    .p {
+      font-family: "sfpro";
+      color: black;
+      position: relative; 
+      top: -500px;
+      font-size: 16px;
+      line-height: 1.5; /* Improve readability */
+      margin-right: 10px; 
+      margin-left: 10px; 
+      text-align: left; /* Align the text */
+    }
+
     .single-image {
-  display: block; /* Makes the image a block element */
-  margin: 20px auto; /* Adds space above and below, centers it horizontally */
-  position: relative; 
-  top: -500px; 
-  box-align: center; 
-  width: 800px; /* Set the width */
-  height: 550px; /* Set the height */
-}
+      display: block; /* Makes the image a block element */
+      margin: 20px auto; /* Adds space above and below, centers it horizontally */
+      position: relative; 
+      top: -500px; 
+      box-align: center; 
+      width: 800px; /* Set the width */
+      height: 550px; /* Set the height */
+    }
     
     .image-row {
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers the images horizontally */
-  gap: 20px; /* Adds space between the images */
-  position: relative; 
-  top: -500px; /* Adjusts vertical position to match your design */
-}
+      display: flex; /* Enables flexbox */
+      justify-content: center; /* Centers the images horizontally */
+      gap: 20px; /* Adds space between the images */
+      position: relative; 
+      top: -500px; /* Adjusts vertical position to match your design */
+    }
 
-.image-row img {
-  width: 100%; /* Automatically scales to fit within a container */
-  height: 100%; /* Maintains the aspect ratio */
-}
+    .image-row img {
+      width: 100%; /* Automatically scales to fit within a container */
+      height: 100%; /* Maintains the aspect ratio */
+    }
+
+    .container {
+      margin: 0 auto; /* Centers the content horizontally */
+      padding: 0 20px; /* Adds padding to the left and right */
+      max-width: 1200px; /* Sets a maximum width for the content */
+    }
   </style>
 </head>
 <body>
-  <ul>
-    <li><a class="active" href="#home">HOME</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#play">PLAY</a></li>
-  </ul>
-  
-  <h1 class="casestudyh1">Pakmen Volleyball</h1>
+  <div class="container">
+    <ul>
+      <li><a class="active" href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#play">PLAY</a></li>
+    </ul>
 
-  <div class="list-container">
-    <!-- First List Items -->
-    <div class="list-item">
-      <img src="user.svg" alt="user icon" class="icons">
-      <h3 class="casestudyh3">Role</h3>
-    </div>
-    <div class="text-column">
-      <div class="text-item">Social Media Coordinator</div>
+    <h1 class="casestudyh1">Pakmen Volleyball</h1>
+
+    <div class="list-container">
+      <div class="list-item">
+        <img src="user.svg" alt="user icon" class="icons">
+        <h3 class="casestudyh3">Role</h3>
+      </div>
+      <div class="text-column">
+        <div class="text-item">Social Media Coordinator</div>
+      </div>
+
+      <div class="list-item">
+        <img src="tool.svg" alt="tool icon" class="icons">
+        <h3 class="casestudyh3">Tools</h3>
+      </div>
+      <div class="text-column">
+        <div class="text-item">Adobe CC, Figma</div>
+      </div>
+
+      <div class="list-item">
+        <img src="clock.svg" alt="clock icon" class="icons">
+        <h3 class="casestudyh3">Timeline</h3>
+      </div>
+      <div class="text-column">
+        <div class="text-item">Jun 2023 - Aug 2023</div>
+      </div>
+
+      <div class="overview-container">
+        <h3 class="overviewh3">Overview</h3>
+        <p class="overviewp">
+          Pakmen Volleyball is a prominent organization that focuses on creating a dynamic and engaging community for volleyball enthusiasts. As the Social Media Coordinator, I contributed to managing event promotions, creating visually appealing content, and ensuring timely communication across various platforms. This role required a strong understanding of digital media tools and an ability to effectively engage with the target audience. The experience was incredibly fulfilling and helped me grow as a professional in the social media space.
+        </p>
+      </div>
     </div>
 
-    <div class="list-item">
-      <img src="tool.svg" alt="tool icon" class="icons">
-      <h3 class="casestudyh3">Tools</h3>
-    </div>
-    <div class="text-column">
-      <div class="text-item">Adobe CC, Figma</div>
-    </div>
+    <img src="P_header.png" alt="description of image" class="header-image">
 
-    <div class="list-item">
-      <img src="clock.svg" alt="clock icon" class="icons">
-      <h3 class="casestudyh3">Timeline</h3>
-    </div>
-    <div class="text-column">
-      <div class="text-item">Jun 2023 - Aug 2023</div>
-    </div>
+    <h3 class="h3">My Work</h3>
+    <h4 class="h4">UNDERSTANDING THE BRAND</h4>
 
-    <!-- Overview Section: This will appear on the right under the lists -->
-    <div class="overview-container">
-      <h3 class="overviewh3">Overview</h3>
-      <p class="overviewp">
-        Pakmen Volleyball is a prominent organization that focuses on creating a dynamic and engaging community for volleyball enthusiasts. As the Social Media Coordinator, I contributed to managing event promotions, creating visually appealing content, and ensuring timely communication across various platforms. This role required a strong understanding of digital media tools and an ability to effectively engage with the target audience. The experience was incredibly fulfilling and helped me grow as a professional in the social media space.
-      </p>
+    <p class="p">
+      After my first week at Pakmen, I realized the club stood out from others in the GTA by supporting youth from all backgrounds in an engaging way, regardless of skill level. The club brought people together through their shared passion for volleyball, and not only gave youth a physical outlet but also provided mentors to support their personal growth. I focused on building a connection with the audience and used storytelling to showcase the club’s diversity, unique programs, and strong sense of community, with the goal of attracting more people to the Pakmen courts.
+    </p>
+
+    <img src="Pakmen_1.jpg" alt="description of image"  class="single-image">
+
+    <h4 class="h4">SHOWCASING THE POSSIBILITIES</h4>
+    <p class="p">
+      I started off by showing the team what was possible by creating a mockup of an overlapping Instagram grid and recreating common posts. I focused on developing their brand by creating a cohesive colour scheme, typography, and dynamic graphics and photos.
+    </p>
+
+    <div class="image-row">
+      <img src="Pakmen Branding.png" alt="Branding image">
+      <img src="Instagram_Grid.png" alt="Instagram grid image">
     </div>
   </div>
-
-  <!-- Add class to the image -->
-  <img src="P_header.png" alt="description of image" class="header-image">
-  
-  <h3 class="h3">My Work</h3>
-  <h4 class="h4">UNDERSTANDING THE BRAND</h4>
-  
-  <p class="p">
-     After my first week at Pakmen, I realized the club stood out from others in the GTA by supporting youth from all backgrounds in an engaging way, regardless of skill level. The club brought people together through their shared passion for volleyball, and not only gave youth a physical outlet but also provided mentors to support their personal growth. I focused on building a connection with the audience and used storytelling to showcase the club’s diversity, unique programs, and strong sense of community, with the goal of attracting more people to the Pakmen courts.
-  </p>
-  
- <img src="Pakmen_1.jpg" alt="description of image"  class="single-image">
-  
-<h4 class="h4">SHOWCASING THE POSSIBILITIES</h4>
- <p class="p">
-I started off by showing the team what was possible by creating a mockup of an overlapping Instagram grid and recreating common posts. I focused on developing their brand by creating a cohesive colour scheme, typography, and dynamic graphics and photos.
-  </p>
-  
-<div class="image-row">
-  <img src="Pakmen Branding.png" alt="Branding image">
-  <img src="Instagram_Grid.png" alt="Instagram grid image">
-</div>
-  
-  
-  
-  
 </body>
 </html>
