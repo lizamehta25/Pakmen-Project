@@ -22,6 +22,15 @@
     .sfpro { 
       font-family: "sfpro";
     }
+    
+    @font-face { 
+      font-family: "sfpro-med"; 
+      src: url("SF-Pro-Display-Medium.otf") format("opentype");
+    }
+    
+    .sfpro-med { 
+      font-family: "sfpro-med";
+    }
 
     ul {
       font-family: "sfpro"; 
@@ -81,7 +90,7 @@
     .casestudyh3, .text-item {
       font-family: "sfpro";
       color: grey;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .text-column .text-item {
@@ -105,7 +114,7 @@
     }
 
     .overviewh3 {
-      font-family: "sfpro";
+      font-family: "sfpro-med";
       color: black;
       font-size: 20px;
     }
@@ -116,8 +125,57 @@
       font-size: 16px;
       margin-top: 10px;
       line-height: 1.5;
-
     }
+    
+    .h3, .h4 {
+  position: relative; 
+  top: -500px; 
+  margin: 20px auto 10px; /* Add proper spacing around headers */
+  text-align: left; /* Align text to the left */
+  font-family: "sfpro-med";
+  color: black;
+  font-size: 20px;
+}
+
+.h4 {
+  font-family: "sfpro";
+  color: grey;
+  font-size: 18px;
+  margin-bottom: 15px; /* Add spacing below the h4 */
+}
+
+.p {
+  font-family: "sfpro";
+  color: black;
+  position: relative; 
+  top: -500px;
+  font-size: 16px;
+  line-height: 1.5; /* Improve readability */
+  margin: 0 auto 20px; /* Add margin below the paragraph */
+  text-align: left; /* Align the text */
+}
+    .single-image {
+  display: block; /* Makes the image a block element */
+  margin: 20px auto; /* Adds space above and below, centers it horizontally */
+  position: relative; 
+  top: -500px; 
+  box-align: center; 
+  width: 800px; /* Set the width */
+  height: 550px; /* Set the height */
+}
+    
+    .image-row {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers the images horizontally */
+  gap: 20px; /* Adds space between the images */
+  position: relative; 
+  top: -500px; /* Adjusts vertical position to match your design */
+}
+
+.image-row img {
+  width: 100%; /* Automatically scales to fit within a container */
+  height: 100%; /* Maintains the aspect ratio */
+}
   </style>
 </head>
 <body>
@@ -157,8 +215,8 @@
 
     <!-- Overview Section: This will appear on the right under the lists -->
     <div class="overview-container">
-      <h3 class = "overviewh3">Overview</h3>
-      <p class = overviewp>
+      <h3 class="overviewh3">Overview</h3>
+      <p class="overviewp">
         Pakmen Volleyball is a prominent organization that focuses on creating a dynamic and engaging community for volleyball enthusiasts. As the Social Media Coordinator, I contributed to managing event promotions, creating visually appealing content, and ensuring timely communication across various platforms. This role required a strong understanding of digital media tools and an ability to effectively engage with the target audience. The experience was incredibly fulfilling and helped me grow as a professional in the social media space.
       </p>
     </div>
@@ -166,5 +224,28 @@
 
   <!-- Add class to the image -->
   <img src="P_header.png" alt="description of image" class="header-image">
+  
+  <h3 class="h3">My Work</h3>
+  <h4 class="h4">UNDERSTANDING THE BRAND</h4>
+  
+  <p class="p">
+     After my first week at Pakmen, I realized the club stood out from others in the GTA by supporting youth from all backgrounds in an engaging way, regardless of skill level. The club brought people together through their shared passion for volleyball, and not only gave youth a physical outlet but also provided mentors to support their personal growth. I focused on building a connection with the audience and used storytelling to showcase the club’s diversity, unique programs, and strong sense of community, with the goal of attracting more people to the Pakmen courts.
+  </p>
+  
+ <img src="Pakmen_1.jpg" alt="description of image"  class="single-image">
+  
+<h4 class="h4">SHOWCASING THE POSSIBILITIES</h4>
+ <p class="p">
+I started off by showing the team what was possible by creating a mockup of an overlapping Instagram grid and recreating common posts. I focused on developing their brand by creating a cohesive colour scheme, typography, and dynamic graphics and photos.
+  </p>
+  
+<div class="image-row">
+  <img src="Pakmen Branding.png" alt="Branding image">
+  <img src="Instagram_Grid.png" alt="Instagram grid image">
+</div>
+  
+  
+  
+  
 </body>
 </html>
