@@ -5,6 +5,78 @@
   <meta charset="UTF-8">
   <title>Pakmen Project</title>
   <style>
+    
+.footer-links {
+  display: flex;
+
+  height: 200px;
+  left: 20px; 
+  justify-content: left;
+  gap: 20px;
+  background-image: url("Footer.png"); 
+    
+
+}
+
+.footer-image {
+  position: absolute;
+  top: 0; 
+  width: 100%; /* Makes the image span the entire width of the viewport */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes any extra space caused by inline images */
+}
+    
+        ul {
+      font-family: "sfpro"; 
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Center horizontally */
+    }
+    
+    .ul2 {
+    list-style-type: disc; /* Display bullets */
+    margin-left: 20px; /* Optional, to add some indentation */
+  }
+
+    li {
+      display: inline-block; /* Display list items inline */
+    }
+
+    li a {
+      display: block;
+      color: grey;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  /* unvisited link */
+a:link {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 18px
+}
+
+/* visited link */
+a:visited {
+      font-family: "sfpro";
+      color: grey;
+      font-size: 18px
+}
+
+/* mouse over link */
+a:hover {
+      font-family: "sfpro";
+      color: #FE90CC;
+      font-size: 18px
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
     @font-face { 
       font-family: "tiempos"; 
       src: url("Tiempos-Semi-Italic.otf") format("opentype"); 
@@ -32,36 +104,7 @@
       font-family: "sfpro-med";
     }
 
-    ul {
-      font-family: "sfpro"; 
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      display: flex; /* Use flexbox */
-      justify-content: center; /* Center horizontally */
-    }
-    
-    .ul2 {
-    list-style-type: disc; /* Display bullets */
-    margin-left: 20px; /* Optional, to add some indentation */
-  }
 
-    li {
-      display: inline-block; /* Display list items inline */
-    }
-
-    li a {
-      display: block;
-      color: grey;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: lightpink;
-    }
 
     .casestudyh1 {
       font-family: "tiempos";
@@ -201,11 +244,11 @@
 </head>
 <body>
   <div class="container">
-    <ul>
-      <li><a class="active" href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#play">PLAY</a></li>
-    </ul>
+  <ul>
+    <li><a class="active" href="https://lizamehta25.github.io/portfolio/">HOME</a></li>
+    <li><a href="https://lizamehta25.github.io/about-page/">ABOUT</a></li>
+    <li><a href="#play">PLAY</a></li>
+  </ul>
 
     <h1 class="casestudyh1">Pakmen Volleyball</h1>
 
@@ -289,7 +332,16 @@ One of the most rewarding outcomes of my social media campaign at Pakmen was the
 
 None of this would have been possible if I hadn’t acted on the idea I had. I realized that taking initiative and bringing my talents to the table can lead to unexpected, positive results. This experience taught me the importance of stepping up and being proactive in creating opportunities for connection and engagement.
 </p>
-
+    
+  </div>
+   
+  
+<div class="footer-links">
+  
+  <h4 class="h4"><a href="https://x.com/leezaofc" target="_blank">TWITTER</a></h4>
+    
+  <h4 class="h4"><a href="https://www.linkedin.com/in/liza-mehta-45bb851b6/">LINKEDIN</a></h4>
+  <h4 class="h4"><a href="https://drive.google.com/file/d/1nLPNY6S1G-0NWOJ6H0xOOF2L0bOOzVEj/view?usp=sharing">RESUME</a></h4>
   </div>
 </body>
 </html>
