@@ -5,29 +5,36 @@
   <meta charset="UTF-8">
   <title>Pakmen Project</title>
   <style>
-    
+
+.container {
+  margin-bottom: -350px !important;
+}
+
+.footer {
+  position: relative;
+}
+
 .footer-links {
+  position: absolute;
   display: flex;
-
-  height: 200px;
-  left: 20px; 
+  bottom: 0;
+  left: 20px;
   justify-content: left;
-  gap: 20px;
-  background-image: url("Footer.png"); 
-    
+}
 
+.footer-links h4 {
+  top: 0;
 }
 
 .footer-image {
-  position: absolute;
-  top: 0; 
+  top: 0;
   width: 100%; /* Makes the image span the entire width of the viewport */
   height: auto; /* Maintains the aspect ratio */
   display: block; /* Removes any extra space caused by inline images */
 }
-    
+
         ul {
-      font-family: "sfpro"; 
+      font-family: "sfpro";
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -35,7 +42,7 @@
       display: flex; /* Use flexbox */
       justify-content: center; /* Center horizontally */
     }
-    
+
     .ul2 {
     list-style-type: disc; /* Display bullets */
     margin-left: 20px; /* Optional, to add some indentation */
@@ -77,30 +84,30 @@ a:hover {
 a:active {
   color: blue;
 }
-    @font-face { 
-      font-family: "tiempos"; 
-      src: url("Tiempos-Semi-Italic.otf") format("opentype"); 
+    @font-face {
+      font-family: "tiempos";
+      src: url("Tiempos-Semi-Italic.otf") format("opentype");
     }
-    
+
     .tiempos {
       font-family: "tiempos";
     }
 
-    @font-face { 
-      font-family: "sfpro"; 
+    @font-face {
+      font-family: "sfpro";
       src: url("SF-Pro-Display-Light.otf") format("opentype");
     }
-    
-    .sfpro { 
+
+    .sfpro {
       font-family: "sfpro";
     }
-    
-    @font-face { 
-      font-family: "sfpro-med"; 
+
+    @font-face {
+      font-family: "sfpro-med";
       src: url("SF-Pro-Display-Medium.otf") format("opentype");
     }
-    
-    .sfpro-med { 
+
+    .sfpro-med {
       font-family: "sfpro-med";
     }
 
@@ -108,10 +115,10 @@ a:active {
 
     .casestudyh1 {
       font-family: "tiempos";
-      font-size: 50px; 
-      position: relative; 
-      top: 100px; 
-      left: 650px; 
+      font-size: 50px;
+      position: relative;
+      top: 100px;
+      left: 650px;
     }
 
     .list-container {
@@ -120,7 +127,7 @@ a:active {
       left: 650px; /* Matches the h1's horizontal alignment */
       display: grid;
       grid-template-columns: 200px 300px; /* Set a fixed width for the columns */
-      row-gap: 10px; 
+      row-gap: 10px;
       column-gap: 3px;
     }
 
@@ -143,7 +150,7 @@ a:active {
 
     .text-column .text-item {
       margin-top: 20px; /* Adds slight top margin to align the second list */
-      color: black; 
+      color: black;
     }
 
     .header-image {
@@ -172,13 +179,13 @@ a:active {
       margin-top: 10px;
       line-height: 1.5;
     }
-    
+
     .h3, .h4 {
-      position: relative; 
-      top: -500px; 
-      margin-right: 10px; 
-      margin-left: 10px; 
-      text-align: left; 
+      position: relative;
+      top: -500px;
+      margin-right: 10px;
+      margin-left: 10px;
+      text-align: left;
       font-family: "sfpro-med";
       color: black;
       font-size: 20px;
@@ -194,39 +201,39 @@ a:active {
     .p {
       font-family: "sfpro";
       color: black;
-      position: relative; 
+      position: relative;
       top: -500px;
       font-size: 16px;
       line-height: 1.5; /* Improve readability */
-      margin-right: 10px; 
-      margin-left: 10px; 
+      margin-right: 10px;
+      margin-left: 10px;
       text-align: left; /* Align the text */
     }
 
     .single-image {
       display: block; /* Makes the image a block element */
       margin: 20px auto; /* Adds space above and below, centers it horizontally */
-      position: relative; 
-      top: -500px; 
-      box-align: center; 
+      position: relative;
+      top: -500px;
+      box-align: center;
       width: auto; /* Set the width */
       height: 550px; /* Set the height */
     }
-    
+
 .fill-image {
   display: block; /* Makes the image a block element */
   margin: 20px auto; /* Adds space above and below, centers it horizontally */
-  position: relative; 
+  position: relative;
   top: -500px;
   width: 100%; /* Makes the image stretch to the container’s width */
   height: auto; /* Maintains the aspect ratio */
 }
-    
+
     .image-row {
       display: flex; /* Enables flexbox */
       justify-content: center; /* Centers the images horizontally */
       gap: 20px; /* Adds space between the images */
-      position: relative; 
+      position: relative;
       top: -500px; /* Adjusts vertical position to match your design */
     }
 
@@ -305,7 +312,7 @@ a:active {
       <img src="Pakmen Branding.png" alt="Branding image">
       <img src="Instagram_Grid.png" alt="Instagram grid image">
     </div>
-    
+
     <h3 class="h3">The Results</h3>
     <h4 class="h4">CONTENT</h4>
 <p class="p">
@@ -313,37 +320,35 @@ a:active {
 </p>
 
 <p class="p">My most popular ideas included: What’s your volleyball ick? Why do you love Pakmen summer camp? I’m passing the phone to someone who…</p>
-    
+
 <img src="943shots_so 2.png" alt="description of image"  class="single-image">
-    
-    
+
+
 <h4 class="h4">STATISTICAL</h4>
 <p class="p">
-The summer campaign brought a remarkable surge in user engagement on Pakmen’s social media platforms. This transformation led to an increase in summer camp registration and a significant increase in engagement. In July alone more than 8000 accounts were engaged with an 14.1% increase of followers and 113% non follower engagement. Ar the end of the summer, Pakmen received over 26,000 total content interactions and over 1000 new followers. 
+The summer campaign brought a remarkable surge in user engagement on Pakmen’s social media platforms. This transformation led to an increase in summer camp registration and a significant increase in engagement. In July alone more than 8000 accounts were engaged with an 14.1% increase of followers and 113% non follower engagement. Ar the end of the summer, Pakmen received over 26,000 total content interactions and over 1000 new followers.
 </p>
-    
+
 <img src="Frame 3.png" alt="description of image"  class="fill-image">
-    
+
 <h3 class="h3">Key Takeaways</h3>
 <h4 class="h4">COMMUNITY OVER NUMBERS</h4>
-    
+
 <p class="p">
 One of the most rewarding outcomes of my social media campaign at Pakmen was the sense of community it fostered. When I first started, people were hesitant to participate, but as they began to see relatable content that resonated with them, they became more eager to get involved. By the end of the campaign, a sense of excitement had built up—people would gather around to watch the daily edits, parents would ask to have their kids featured, and a friendly competition developed between locations to submit the best content.
 
 None of this would have been possible if I hadn’t acted on the idea I had. I realized that taking initiative and bringing my talents to the table can lead to unexpected, positive results. This experience taught me the importance of stepping up and being proactive in creating opportunities for connection and engagement.
 </p>
-    
+</div>
+
+
+<div class="footer">
+  <img src="Footer.png"  alt="Footer image" class="footer-image" />
+  <div class="footer-links">
+    <h4 class="h4"><a href="https://x.com/leezaofc" target="_blank">TWITTER</a></h4>
+    <h4 class="h4"><a href="https://www.linkedin.com/in/liza-mehta-45bb851b6/">LINKEDIN</a></h4>
+    <h4 class="h4"><a href="https://drive.google.com/file/d/1nLPNY6S1G-0NWOJ6H0xOOF2L0bOOzVEj/view?usp=sharing">RESUME</a></h4>
   </div>
-   
-  
-<div class="footer-links">
-  
-  <h4 class="h4"><a href="https://x.com/leezaofc" target="_blank">TWITTER</a></h4>
-    
-  <h4 class="h4"><a href="https://www.linkedin.com/in/liza-mehta-45bb851b6/">LINKEDIN</a></h4>
-  <h4 class="h4"><a href="https://drive.google.com/file/d/1nLPNY6S1G-0NWOJ6H0xOOF2L0bOOzVEj/view?usp=sharing">RESUME</a></h4>
-  </div>
+</div>
 </body>
 </html>
-
-
